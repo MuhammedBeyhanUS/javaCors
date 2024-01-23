@@ -9,7 +9,7 @@ export function App() {
   const [BEmessage, setBEMessage] = useState("Empty!");
   useEffect(()=>{
     const api = async ()=>{
-    const data = await fetch("http://localhost/8080/hi");
+    const data = await fetch("http://localhost:8080/hi");
     const jsonData = await data.json();
     setBEMessage(jsonData["content"])
     }
