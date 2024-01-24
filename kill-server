@@ -1,0 +1,6 @@
+    greparray=$(lsof -i tcp:8080 | grep -Eo "\s(\d{5})\s")
+    for pid in $greparray
+    do
+        kill -9 $pid
+        echo $pid
+    done
