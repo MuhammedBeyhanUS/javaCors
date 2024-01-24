@@ -10,6 +10,7 @@ run-backend:
 
 down:
 	./kill-server
-
+downlin:
+	fuser -k 8080/tcp
 	
 
